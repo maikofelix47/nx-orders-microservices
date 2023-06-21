@@ -14,10 +14,10 @@ The project consists of 3 NestJs apps under Nx Monorepo
 2. Node v16+.
 3. MySQL Database
 
-## Installation
+## Installation and setup
 
 1. Clone project
 2. Navigate to folder and run `npm install`
-3. Start Api Gateway service `nx serve api-gateway` and access via `http://localhost:3000/`
-4. Start analytics service `nx serve analytics` and access via `http://localhost:3001/`
-5. Start tracking service `nx serve order-tracker` and access via `http://localhost:3002/`
+3. Start Api Gateway service `nx serve api-gateway` and access via `http://localhost:3000/api/orders`
+4. Start analytics service `nx serve analytics` and access via `http://localhost:3001/` and TCP Port 3001
+5. Start tracking service `nx serve order-tracker` and access via TC Port 3002
