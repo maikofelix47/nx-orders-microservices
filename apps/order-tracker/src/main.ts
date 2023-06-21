@@ -17,9 +17,7 @@ async function bootstrap() {
     }
   );
   await app.listen();
-  Logger.log(
-    `🚀 Application is running on: http://localhost:${port}/${globalPrefix}`
-  );
+  Logger.log(`Order Tracker service is running`);
 }
 
 bootstrap();
