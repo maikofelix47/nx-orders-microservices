@@ -1,8 +1,17 @@
 import { Injectable } from '@nestjs/common';
+import { CreateOrderEvent } from './create-order-event';
 
 @Injectable()
 export class AppService {
-  getData(): { message: string } {
-    return { message: 'Hello API' };
+  private orders = [];
+
+  count() {
+    return this.orders.length;
+  }
+  insertOne(order: CreateOrderEvent) {
+    this.orders.push(order);
+  }
+  getAnalytics() {
+    return this.orders;
   }
 }

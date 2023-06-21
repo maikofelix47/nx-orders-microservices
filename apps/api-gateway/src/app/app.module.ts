@@ -11,6 +11,13 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
         name: 'ORDERTRACKER',
         transport: Transport.TCP,
       },
+      {
+        name: 'ANALYTICS',
+        transport: Transport.TCP,
+        options: {
+          port: 3001,
+        },
+      },
     ]),
   ],
   controllers: [AppController],

@@ -11,6 +11,10 @@ export class AppController {
   getData() {
     return this.appService.findAll();
   }
+  @Get('analytics')
+  getAnalytics() {
+    return this.appService.getAnalytics();
+  }
   @Post()
   createOrder(@Body() newOrder: CreateOrderDto) {
     return this.appService.createOrder(newOrder);
